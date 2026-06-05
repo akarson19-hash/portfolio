@@ -16,6 +16,7 @@ const Navbar = () => {
     { name: 'Experience', id: 'experience' },
     { name: 'Education', id: 'education' },
     { name: 'Achievements', id: 'achievements' },
+    { name: 'Certifications', id: 'certifications' },
     { name: 'Resume', id: 'resume' },
     { name: 'Contact', id: 'contact' },
   ];

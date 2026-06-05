@@ -5,10 +5,10 @@ import { FaDownload, FaArrowRight, FaEnvelope } from 'react-icons/fa';
 const Hero = () => {
   const roles = [
     'Full Stack Developer',
-    'Java Developer',
-    'Spring Boot Enthusiast',
-    'MERN Stack Developer',
     'Problem Solver',
+    'Spring Boot Enthusiast',
+    
+    
   ];
 
   const [roleIndex, setRoleIndex] = useState(0);
@@ -93,10 +93,10 @@ const Hero = () => {
               className="text-4xl md:text-6xl font-extrabold tracking-tight"
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">
-                Akarson
+                Akarson 
               </span>{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan via-neon-blue to-neon-violet glow-text-cyan">
-                S
+                 S
               </span>
             </motion.h1>
 
@@ -189,7 +189,7 @@ const Hero = () => {
             <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full p-3 bg-white/[0.02] backdrop-blur-xl border border-white/10 shadow-[0_0_50px_rgba(0,242,254,0.25)] flex items-center justify-center neon-cyan-border">
               <img
                 src="/profile.jpeg"
-                alt="Akarson S Profile"
+                alt="AKARSON S Profile"
                 className="w-full h-full object-cover rounded-full transition-transform duration-300 ease-out border border-white/5"
               />
 
