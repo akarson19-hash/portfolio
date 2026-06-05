@@ -4,7 +4,7 @@ import { FaDownload, FaEye, FaEyeSlash, FaGoogleDrive, FaFilePdf } from 'react-i
 
 const Resume = () => {
   const [showPreview, setShowPreview] = useState(false);
-  const driveLink = "https://drive.google.com/file/d/10wnMYtEfWO3NaBy_x8x-i2Q8Asl-AX20/view";
+  const driveLink = "https://drive.google.com/file/d/1iSrEqAfQ_LAhL9oQSXiee6oHhbaa70CU/view";
   const pdfLocalPath = "/Resume.pdf";
 
   return (
