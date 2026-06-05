@@ -35,6 +35,8 @@ const Certifications = () => {
       details:
         'Technical training in data structures and algorithm implementation with performance-focused problem solving.',
       icon: <FaLaptopCode className="text-neon-violet" />,
+      link: 'https://leetcode.com/u/Akarson_S/',
+      buttonText: 'View Profile',
       badgeText: 'Technical Training',
       glow: 'shadow-[0_0_18px_rgba(127,0,255,0.18)] hover:border-neon-violet/30',
     },
