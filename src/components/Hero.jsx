@@ -134,11 +134,10 @@ const Hero = () => {
               <FaArrowRight size={14} />
             </button>
 
-            <a
-              href="/Resume.pdf"
-              download="Akarson_S_Resume.pdf"
-              className="px-6 py-3 rounded-xl border border-white/10 bg-white/5 text-gray-300 font-bold flex items-center space-x-2 hover:bg-white/10 hover:border-neon-cyan/40 hover:text-neon-cyan transition-all duration-300"
-            >
+           <a
+  href="https://drive.google.com/uc?export=download&id=1iSrEqAfQ_LAhL9oQSXiee6oHhbaa70CU"
+  className="px-6 py-3 rounded-xl border border-white/10 bg-white/5 text-gray-300 font-bold flex items-center space-x-2 hover:bg-white/10 hover:border-neon-cyan/40 hover:text-neon-cyan transition-all duration-300"
+>
               <FaDownload size={14} />
               <span>Download Resume</span>
             </a>

@@ -4,8 +4,10 @@ import { FaDownload, FaEye, FaEyeSlash, FaGoogleDrive, FaFilePdf } from 'react-i
 
 const Resume = () => {
   const [showPreview, setShowPreview] = useState(false);
-  const driveLink = "https://drive.google.com/file/d/1iSrEqAfQ_LAhL9oQSXiee6oHhbaa70CU/view";
-  const pdfLocalPath = "/Resume.pdf";
+  const fileId = "1iSrEqAfQ_LAhL9oQSXiee6oHhbaa70CU";
+  const downloadUrl = `https://drive.google.com/uc?id=${fileId}&export=download`;
+  const previewUrl = `https://drive.google.com/file/d/${fileId}/preview`;
+  const viewUrl = `https://drive.google.com/file/d/${fileId}/view`;
 
   return (
     <section id="resume" className="py-24 relative z-10">
@@ -37,16 +39,16 @@ const Resume = () => {
                 <FaFilePdf size={28} />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-1">Akarson_Resume.pdf</h3>
-                <p className="text-xs text-gray-500 font-sans">Format: PDF Document • Size: ~196 KB • Updated: June 2026</p>
+                <h3 className="text-xl font-bold text-white mb-1">Akarson_S_Resume.pdf</h3>
+                <p className="text-xs text-gray-500 font-sans">Format: PDF Document • Hosted on Google Drive • Updated: June 2026</p>
               </div>
             </div>
 
             {/* Actions Grid */}
             <div className="flex flex-wrap gap-3.5 justify-center">
               <a
-                href={pdfLocalPath}
-                download="Akarson_S_Resume.pdf"
+               href="/Resume.pdf"
+download="AKARSON_S_Resume.pdf"
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-neon-cyan to-neon-blue text-black font-bold text-sm flex items-center space-x-2 shadow-[0_0_15px_rgba(0,242,254,0.2)] hover:scale-105 transition-all duration-300"
               >
                 <FaDownload size={14} />
@@ -62,7 +64,7 @@ const Resume = () => {
               </button>
 
               <a
-                href={driveLink}
+                href={viewUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-5 py-3 rounded-xl border border-white/5 bg-transparent text-gray-400 font-semibold text-sm flex items-center space-x-2 hover:text-white transition-colors duration-200"
@@ -82,12 +84,13 @@ const Resume = () => {
               transition={{ duration: 0.4 }}
               className="w-full glassmorphism rounded-3xl border border-white/5 overflow-hidden shadow-2xl p-2.5 relative"
             >
-              {/* PDF Viewer */}
+              {/* Google Drive PDF Preview */}
               <iframe
-                src={`${pdfLocalPath}#toolbar=0&navpanes=0&scrollbar=0`}
-                title="Akarson S Resume PDF Viewer"
+                src={previewUrl}
+                title="Akarson S Resume PDF Preview"
                 className="w-full h-full rounded-2xl bg-white/5"
                 style={{ border: 'none' }}
+                allow="autoplay"
               />
             </motion.div>
           )}
